@@ -6,7 +6,11 @@ interface User {
 
 const prettyPrintWilder = (users:Array<User>):void => {
     users.map((user) => {
+      if(user.age){
       console.log(`${user.name} is ${user.age} years old`);
+      }else if(user.birthday){
+      console.log(`${user.name} was born on ${user.birthday.getFullYear()}`);
+      }
     });
   };
   
