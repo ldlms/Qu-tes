@@ -13,12 +13,7 @@ class BankCustomer {
         return this.name;
     }
     verifyPinInput(code) {
-        if (code === this.code) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return code === this.code;
     }
 }
 const customer = new BankCustomer('John Doe', '3579');

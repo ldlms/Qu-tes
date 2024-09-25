@@ -1,4 +1,4 @@
-import assert from 'assert'
+import assert from "assert"
 
 class BankCustomer{
 
@@ -15,11 +15,7 @@ class BankCustomer{
     }
 
     public verifyPinInput(code:string):boolean{
-        if(code === this.code){
-            return true;
-        }else{
-            return false;
-        }
+        return code === this.code;
     }
 }
 
