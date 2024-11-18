@@ -6,8 +6,7 @@ var products = [
     { id: 5, name: "Montre Connectée", category: "Électronique", price: 249.99, rating: 4.4 },
 ];
 function orderByRating() {
-    products.sort(function (b, a) { return a.rating - b.rating; });
-    console.log(products);
+    console.log(products.sort(function (b, a) { return a.rating - b.rating; }));
 }
 function filterByCategory(filter) {
     console.log(products.filter(function (products) { return products.category == filter; }));

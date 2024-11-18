@@ -7,8 +7,7 @@ const products = [
   ];
 
 function orderByRating():void{
-    products.sort((b,a) => a.rating - b.rating);
-    console.log( products);
+    console.log(products.sort((b,a) => a.rating - b.rating));
 }
 
 function filterByCategory(filter:string):void{
